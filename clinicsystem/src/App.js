@@ -1,11 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-import './LogIn'
-import { LogIn } from './LogIn';
+
+import "./App.css";
+import "./LogIn";
+import { LogIn } from "./LogIn";
+import { useState } from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import { AdminBoard } from "./AdminBoard";
+
 function App() {
   return (
     <>
-      <LogIn/>
+      <Routes>
+        <Route path="/" element={<LogIn/>} />
+        <Route path="/AdminDashboard" element={<AdminBoard/>}/>
+      </Routes>
+
+      {/* <LogIn /> */}
     </>
   );
 }
