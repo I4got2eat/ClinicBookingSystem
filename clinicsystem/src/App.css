@@ -14,6 +14,7 @@ body{
 
 :root{
   --main-color: rgb(42, 44, 163);
+  --main-color-secondary: rgb(26, 27, 100);
   --secondary-color: rgb(209, 209, 209);
   --background-color: rgb(255, 255, 255);
 }
@@ -62,8 +63,12 @@ a{
 }
 
 
-.btns{
+.regBtn{
+background-color: var(--main-color-secondary);
+}
 
+.logBtn{
+  background-color: var(--main-color);
 }
 
 .btn{
@@ -74,7 +79,6 @@ a{
   height: 1.4rem;
   margin-left: 3rem;
   scale: 135%;
-  background-color: var(--main-color);
   color: var(--background-color);
 }
 
@@ -90,7 +94,7 @@ a{
 }
 
 .background{
-  filter: blur(2px);
+
   background-size: 115%;
   margin: 0;
   padding: 0;
@@ -134,4 +138,61 @@ a{
   margin-left: 2rem;
   margin-top: 0.3rem;
   padding: 0;
+}
+
+.profilePic{
+  margin-left: 5rem;
+  margin-top: 3rem;
+  background-size: 100%;
+  height: 20rem;
+  width: 20rem;
+  background-image: url(/public/assets/Default_profile_picture.png);
+}
+
+
+.sideMenu{
+  height: 100vh;
+  width: 15rem;
+  background-color: var(--main-color-secondary);
+}
+
+
+.custsomBtn{
+
+  text-align: left;
+  width: 100%;
+  height: 3rem;
+  margin: 0;
+  margin-left: 1rem;
+  padding-top: 1.4rem;
+  color: var(--secondary-color);
+  transition: all 0.7s;
+}
+
+.custsomBtn:hover{
+  cursor: pointer;
+  color: var(--background-color);
+  scale: 105%;
+}
+
+.menu{
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.logoutBtn{
+  margin-top: 37rem;
+  margin-left: 2rem;
+  width: 3rem;
+  height: 3rem;
+  /* background-image: url("https://png.pngtree.com/png-vector/20190419/ourmid/pngtree-vector-logout-icon-png-image_956410.jpg"); */
+  background-image: url(/public/assets/Logout_icon.png);
+  background-size: 100%;
+}
+
+.logoutBtn:hover{
+ cursor: pointer;
 }

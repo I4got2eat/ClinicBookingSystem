@@ -83,13 +83,13 @@ const [email, setEmail] = useState("");
               <div className="btns">
                 <button
                   disabled={false}
-                  className="logInBtn btn firstBtn"
+                  className="logBtn btn firstBtn"
                   type="submit"
                 >
                   Log in
                 </button>
-                <button className="RegBtn btn" type="apply" onClick={()=>handleApply}>
-                  Apply for account
+                <button className="btn regBtn" type="apply" onClick={()=>handleApply}>
+                  Register
                 </button>
               </div>
             </fieldset>
