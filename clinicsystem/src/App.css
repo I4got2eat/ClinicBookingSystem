@@ -6,7 +6,7 @@
 }
 
 body{
-  
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -35,7 +35,7 @@ body{
 
 
 input{
-  width: 13rem;
+  width: 11.4rem;
   border: 0;
   border-bottom: 1px solid black;
   margin: 0;
@@ -44,13 +44,20 @@ input{
   padding: 0;
   background-color: var(--secondary-color);
   font-size: 17px;
+  padding-left: 25px;
 }
 
 .email{
-  background-image: url("https://cdn-icons-png.flaticon.com/128/646/646094.png") no-repeat;
-  background-position: center;  
-  background-size: 10%;
+  /* background-position: center;   */
+  background-size: 9%;
+  background-image: url(/public/assets/email_icon.png);
+  background-repeat: no-repeat;
+}
 
+.password{
+  background-size: 9%;
+  background-image: url(/public/assets/password_icon.png);
+  background-repeat: no-repeat;
 }
 
 
@@ -74,7 +81,7 @@ background-color: var(--main-color-secondary);
 .btn{
   border-radius: 100px;
   border: 0px;
-  margin-top: 1.3rem;
+  margin-top: 1.5rem;
   width: 8rem;
   height: 1.4rem;
   margin-left: 3rem;
@@ -112,7 +119,7 @@ background-color: var(--main-color-secondary);
   margin-top: 0.5rem;
   color: rgb(216, 15, 15);
   text-align: center;
-  font-weight: bold;
+  font-weight: 600;
   height: 1rem;
 } 
 
@@ -191,8 +198,36 @@ background-color: var(--main-color-secondary);
   /* background-image: url("https://png.pngtree.com/png-vector/20190419/ourmid/pngtree-vector-logout-icon-png-image_956410.jpg"); */
   background-image: url(/public/assets/Logout_icon.png);
   background-size: 100%;
+  transition: all 0.7s;
 }
 
 .logoutBtn:hover{
  cursor: pointer;
+ background-image: url(/public/assets/Logout_icon_hover.png);
+ scale: 105%;
+}
+
+.dashboard{
+  display: flex;
+}
+
+.adminAppointments{
+  margin-top: 3rem;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.doctorsName{
+  padding: 2px;
+  font-weight: 400;
+  border: 1px solid var(--main-color);
+  color: var(--background-color);
+  background-color: var(--main-color);
+  margin: 0px;
+  border: 1px solid var(--background-color);
+}
+
+.row{
+  display: flex;
 }
