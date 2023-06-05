@@ -47,7 +47,7 @@ export const LogIn = () => {
 
   if (logggedIn) {
     // return <AdminBoard email={email} />;
-    navigate(`/Appointments`)
+    navigate(`/dashboard`)
     // return <Outlet/>
   }else{
 
